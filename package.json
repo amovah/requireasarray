@@ -1,6 +1,6 @@
 {
   "name": "requireasarray",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "require directory and sub directories and return all of them as array",
   "main": "index.js",
   "repository": {

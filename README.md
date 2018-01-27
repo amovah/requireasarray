@@ -20,6 +20,6 @@ Also, it accepts an extra argument that describe which directory you wish to req
 ```javascript
 //src/index.js
 
-module.exports = require('requireasarray')('./routers/');
+const routers = require('requireasarray')('./routers/');
 
 ```
