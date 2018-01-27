@@ -1,0 +1,23 @@
+{
+  "name": "requireasarray",
+  "version": "0.2.0",
+  "description": "require directory and sub directories and return all of them as array",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amovah/requireasarray.git"
+  },
+  "keywords": [
+    "require",
+    "directory"
+  ],
+  "author": "Ali Movahedi <ali_movahedi@aol.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amovah/requireasarray/issues"
+  },
+  "homepage": "https://github.com/amovah/requireasarray#readme",
+  "engines": {
+    "node": ">=9.4.0"
+  }
+}
