@@ -6,10 +6,15 @@ function getModuleNames(dir) {
   let files = fs.readdirSync(dir);
 
   for (let file of files) {
-    if (file !== 'index.js' && extname(file) === '.js') {
-      fs.lstatSync(resolve(dir, file)).isFile() ?
-      result.push(resolve(dir, file)) :
-      result.push(...getModuleNames(resolve(dir, file)));
+    if (file !== 'index.js') {
+      if (
+        fs.lstatSync(resolve(dir, file)).isFile() &&
+        extname(file) === '.js'
+      ) {
+        result.push(resolve(dir, file))
+      } else {
+        result.push(...getModuleNames(resolve(dir, file)));
+      }
     }
   }
 
